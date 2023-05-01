@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    height: 100vh;
+    /*background-image: url("https://wallpaperaccess.com/full/2432640.jpg");*/
+    background-size: cover; ;
+}
+
+.column {
+    float: left;
+    text-align: center;
+    border: 2px solid red;
+    padding: 5px;
+}
+
+.p1 {
+    font-size: 16px;
+}
+
+
+/*for mobile devices*/
+@media (max-width: 767px) {
+    .column {
+        width: 100%;
+    }
+    .header {
+        /*background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUWTxRA7IAIDPkiTYsZcftPYHWI2RvRflZqw&usqp=CAU");*/
+    }
+    .p1 {
+        font-size: 20px;
+    }
+
+}
+
+/*for tablet device*/
+@media (min-width: 768px) and (max-width: 1023px) {
+    .column {
+        width: 50%;
+    }
+}
+/*for desktop*/
+@media (min-width: 1024px) {
+    .column{
+        width: 25%;
+    }
+}
